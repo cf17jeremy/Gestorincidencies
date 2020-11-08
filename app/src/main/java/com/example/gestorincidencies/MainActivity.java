@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if ((usuari.getText().toString().trim().equals("Admin")) && (contrasenya.getText().toString().trim().equals("12345"))) {
-                    Intent intent = new Intent(MainActivity.this, menu.class);
+                    Intent intent = new Intent(MainActivity.this, conector.class);
                     startActivity(intent);
                 } else {
                     Snackbar.make(v, "Usuario o contraseña incorrecto!", Snackbar.LENGTH_LONG)

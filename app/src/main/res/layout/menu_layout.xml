@@ -6,37 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".menu">
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:bmb_buttonEnum="ham"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_3"
+        app:bmb_piecePlaceEnum="piecePlace_ham_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/afegir"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:text="Afegir" />
-
-        <Button
-            android:id="@+id/llistar"
-            android:layout_width="116dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:text="Llistar" />
-
-        <Button
-            android:id="@+id/eliminar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:text="Eliminar" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

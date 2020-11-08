@@ -26,54 +26,59 @@ import com.nightonke.boommenu.ButtonEnum;
  */
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class menu extends Fragment {
+        public menu() {
+            // Required empty public constructor
+        }
 
-    private final int[] BTNMENU = {R.id.afegir, R.id.llistar, R.id.eliminar};
+        private static int[] img = new int[]{
+                R.drawable.plus,
+                R.drawable.lista,
+                R.drawable.eliminar,
+        };
 
-    public menu() {
-        // Required empty public constructor
-    }
+        public void constructor (BoomMenuButton bmb, int foto, String text, String text2){
+            HamButton.Builder builder = new HamButton.Builder()
+                    .normalImageRes(foto)
+                    .normalText(text)
+                    .subNormalText(text2)
+                    .listener(new OnBMClickListener() {
+                        @Override
+                        public void onBoomButtonClick(int index) {
+                            if (index == 0) {
+                                FragmentManager menuManager = getFragmentManager();
+                                FragmentTransaction menuTransaction = menuManager.beginTransaction();
+                                Fragment fragmentAddIncidencia = new addincidencias();
+                                menuTransaction.replace(R.id.fragmentID, fragmentAddIncidencia);
 
+                                menuTransaction.commit();
+                            } else if (index == 1) {
+                                FragmentManager menuManager = getFragmentManager();
+                                FragmentTransaction menuTransaction = menuManager.beginTransaction();
+                                Fragment fragmentList = new ListIncidencia();
+                                menuTransaction.replace(R.id.fragmentID, fragmentList);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+                                menuTransaction.commit();
+                            } else if (index == 2) {
+                                int numIncidencies = ((conector) getActivity()).arrayincidencias.size();
+                                Toast toast = Toast.makeText(((MainActivity) getActivity()).getApplicationContext(), String.valueOf(numIncidencies), Toast.LENGTH_SHORT);
+                                toast.show();
+                            }
+                        }
+                    });
+            bmb.addBuilder(builder);
+        }
 
-        View menu = inflater.inflate(R.layout.fragment_menu, container, false);
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            View menu = inflater.inflate(R.layout.menu_layout,container,false);
+            BoomMenuButton bmb = (BoomMenuButton) menu.findViewById(R.id.bmb);
+            bmb.setButtonEnum(ButtonEnum.Ham);
+            constructor(bmb,img[0],"Añadir","Añada una nueva incidencia");
+            constructor(bmb,img[1],"Listar","Listar todas las incidencias");
+            constructor(bmb,img[2],"Eliminar","Elimina una incidencia");
 
-        final Button btnAfegir = menu.findViewById(R.id.afegir);
-        btnAfegir.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                FragmentManager menuManager = getFragmentManager();
-                FragmentTransaction menuTransaction = menuManager.beginTransaction();
-                Fragment fragmentAddIncidencia = new addincidencias();
-                menuTransaction.replace(R.id.fragmentID, fragmentAddIncidencia );
-
-                menuTransaction.commit();
-            }
-        });
-
-        final Button btnLlistar = menu.findViewById(R.id.llistar);
-        btnLlistar.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                FragmentManager menuManager = getFragmentManager();
-                FragmentTransaction menuTransaction = menuManager.beginTransaction();
-                Fragment fragmentList = new ListIncidencia();
-                menuTransaction.replace(R.id.fragmentID, fragmentList );
-
-                menuTransaction.commit();
-            }
-        });
-
-        final Button btnEliminar = menu.findViewById(R.id.eliminar);
-        btnEliminar.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                int numIncidencies = ((conector)getActivity()).arrayincidencias.size();
-                Toast toast = Toast.makeText(((MainActivity)getActivity()).getApplicationContext(), String.valueOf(numIncidencies), Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
-
-        return menu;
-    }
+            return menu;
+        }
 }
