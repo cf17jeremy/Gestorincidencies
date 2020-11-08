@@ -13,6 +13,9 @@ import com.google.android.material.snackbar.Snackbar;
 public class MainActivity extends AppCompatActivity {
     Button login;
     EditText usuari,contrasenya;
+    protected ArrayList<Incidencia> arrayIncidencies;
+    protected Fragment [] menuFragments;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if ((usuari.getText().toString().trim().equals("Admin")) && (contrasenya.getText().toString().trim().equals("12345"))){
-                    Intent intent = new Intent (MainActivity.this, menu.class);
-                    startActivity(intent);
+                    arrayIncidencies = new ArrayList<Incidencia>();
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("arrayIncidencies", arrayIncidencies);
                 }
                 else{
                     Snackbar.make(v, "Usuario o contraseña incorrecto!", Snackbar.LENGTH_LONG)
@@ -36,5 +40,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
