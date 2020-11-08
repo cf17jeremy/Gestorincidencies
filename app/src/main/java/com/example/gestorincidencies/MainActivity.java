@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ((usuari.getText().toString().trim().equals("admin")) && (contrasenya.getText().toString().trim().equals("12345"))){
+                if ((usuari.getText().toString().trim().equals("Admin")) && (contrasenya.getText().toString().trim().equals("12345"))){
                     Intent intent = new Intent (MainActivity.this, menu.class);
                     startActivity(intent);
                 }
