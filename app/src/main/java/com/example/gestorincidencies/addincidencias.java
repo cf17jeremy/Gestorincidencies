@@ -1,20 +1,23 @@
 package com.example.gestorincidencies;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.gestorincidencies.MainActivity;
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link addincidencias#} factory method to
+ * create an instance of this fragment.
+ */
+public class addincidencias extends Fragment {
 
-public class addincidencia extends Fragment {
-
-    public AddIncidencia() {
+    public void addincidencias() {
         // Required empty public constructor
     }
 
@@ -23,7 +26,7 @@ public class addincidencia extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View addIncidencia = inflater.inflate(R.layout.fragment_add_incidencia, container, false);
+        final View addIncidencia = inflater.inflate(R.layout.addincidencies_layout, container, false);
 
         final Button btnafegirIncidencia = addIncidencia.findViewById(R.id.btnafegirIncidencia);
         btnafegirIncidencia.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +34,7 @@ public class addincidencia extends Fragment {
                 EditText txtIncidencia = addIncidencia.findViewById(R.id.txtincidencia);
                 String txtIncidenciaForm = txtIncidencia.getText().toString();
 
-                ((MainActivity)getActivity()).arrayIncidencies.add(new Incidencia(txtIncidenciaForm, "alta"));
+                ((conector)getActivity()).arrayincidencias.add(new incidencia(txtIncidenciaForm, "alta"));
 
             }
         });
