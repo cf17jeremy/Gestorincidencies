@@ -32,6 +32,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.etiquetaNom.setText(array_incidencies.get(position).getNom());
+        holder.prioritat.setText(array_incidencies.get(position).getPrioritat());
     }
 
     @Override
@@ -40,13 +41,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView etiquetaNom;
+        TextView etiquetaNom,prioritat;
         ConstraintLayout layout;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             etiquetaNom = itemView.findViewById(R.id.itemListIncidencia);
             layout = itemView.findViewById(R.id.layout);
+            prioritat = itemView.findViewById(R.id.itemListPrioritat);
         }
     }
 }
