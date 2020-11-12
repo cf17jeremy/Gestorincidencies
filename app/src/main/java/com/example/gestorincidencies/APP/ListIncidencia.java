@@ -31,7 +31,7 @@ public class ListIncidencia extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
+        DBCreation = new DBDCreation(getContext());
         // Inflate the layout for this fragment
         View listIncidencia = inflater.inflate(R.layout.fragment_list_incidencia, container, false);
 

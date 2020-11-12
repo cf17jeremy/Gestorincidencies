@@ -54,7 +54,7 @@ public class addincidencias extends Fragment {
                 EditText txtIncidencia = addIncidencia.findViewById(R.id.txtincidencia);
                 String txtIncidenciaForm = txtIncidencia.getText().toString();
 
-                incidencia incidencia = new incidencia(emergencia,txtIncidenciaForm);
+                incidencia incidencia = new incidencia(txtIncidenciaForm,emergencia);
                 DBDCreation.insertIncidencia(db,incidencia);
                 Toast toast = Toast.makeText(getActivity(),"Incidencia creada correctamente",Toast.LENGTH_SHORT);
                 toast.show();
