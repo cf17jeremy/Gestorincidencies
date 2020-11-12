@@ -1,5 +1,6 @@
-package com.example.gestorincidencies;
+package com.example.gestorincidencies.APP;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,12 +11,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.gestorincidencies.BDD.DBDCreation;
+import com.example.gestorincidencies.R;
+
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link ListIncidencia#} factory method to
  * create an instance of this fragment.
  */
 public class ListIncidencia extends Fragment {
+    //Creacion instancia
+    private DBDCreation DBCreation;
 
     public ListIncidencia() {
         // Required empty public constructor
@@ -28,13 +35,12 @@ public class ListIncidencia extends Fragment {
         // Inflate the layout for this fragment
         View listIncidencia = inflater.inflate(R.layout.fragment_list_incidencia, container, false);
 
-        RecyclerView recyclerView = (RecyclerView)listIncidencia.findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = listIncidencia.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(listIncidencia.getContext()));
 
-        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, ((conector)getActivity()).arrayincidencias);
+        RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, DBCreation.LIncidencia());
 
         recyclerView.setAdapter(adapter);
-
 
         return listIncidencia;
     }

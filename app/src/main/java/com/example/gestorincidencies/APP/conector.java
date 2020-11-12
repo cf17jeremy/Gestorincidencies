@@ -1,9 +1,11 @@
-package com.example.gestorincidencies;
+package com.example.gestorincidencies.APP;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+
+import com.example.gestorincidencies.R;
 
 import java.util.ArrayList;
 

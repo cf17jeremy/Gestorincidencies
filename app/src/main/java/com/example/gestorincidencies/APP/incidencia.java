@@ -1,4 +1,4 @@
-package com.example.gestorincidencies;
+package com.example.gestorincidencies.APP;
 
 public class incidencia {
     protected String nom;

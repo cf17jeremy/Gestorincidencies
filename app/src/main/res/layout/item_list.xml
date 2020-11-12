@@ -13,7 +13,8 @@
         android:layout_marginLeft="44dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/itemListPrioritat"
@@ -23,5 +24,6 @@
         android:layout_marginLeft="76dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/itemListIncidencia"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
