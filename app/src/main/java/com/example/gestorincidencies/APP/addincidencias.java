@@ -50,7 +50,7 @@ public class addincidencias extends Fragment {
         final Button btnafegirIncidencia = addIncidencia.findViewById(R.id.btnafegirIncidencia);
         btnafegirIncidencia.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String emergencia = spinner.getSelectedItem().toString() ;
+                String emergencia = spinner.getSelectedItem().toString();
                 EditText txtIncidencia = addIncidencia.findViewById(R.id.txtincidencia);
                 String txtIncidenciaForm = txtIncidencia.getText().toString();
 
