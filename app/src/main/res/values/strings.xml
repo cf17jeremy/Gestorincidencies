@@ -1,14 +1,25 @@
 <resources>
     <string name="app_name">Gestorincidencies</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="dialog_Advetencia">Estás seguro que quieres eliminar todas las incidencias?</string>
+    <!-- LENGUAGE ES -->
+    <string name="dialog_Advetencia">Estás seguro de eliminar todas las incidencias?</string>
     <string name="dialog_aceptar">Aceptar</string>
     <string name="dialog_cancelar">Cancelar</string>
     <string name="dialog_respuesta">Has seleccionado cancelar.</string>
     <string name="dialog_info">Información</string>
     <string name="dialog_confirmacion">Se han eliminado todas las incidencias correctamete!</string>
     <string name="dialog_textovacio">NO PUEDES AGREGAR UNA INCIDENCIA SIN UN NOMBRE!</string>
+    <string name="Añadir">Añadir</string>
+    <string name="Listar">Listar</string>
+    <string name="Eliminar">Eliminar</string>
+    <string name="defAñadir">Añada una nueva incidencia</string>
+    <string name="defListar">Listar todas las incidencias</string>
+    <string name="defEliminar">Elimina una incidencia</string>
+    <string name="errorLogin">Usuario o contraseña incorrecto!</string>
+    <string name="spinerpref1">Alta</string>
+    <string name="spinerpref2">Mediana</string>
+    <string name="spinerpref3">Baja</string>
+    <string name="toast_correctadd">Incidencia creada correctamente</string>
+    <string name="remembertxt">Recuerdame</string>
 
 </resources>

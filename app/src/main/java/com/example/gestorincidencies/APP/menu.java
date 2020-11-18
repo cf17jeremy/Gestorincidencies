@@ -114,9 +114,10 @@ public class menu extends Fragment {
             View menu = inflater.inflate(R.layout.menu_layout,container,false);
             BoomMenuButton bmb = menu.findViewById(R.id.bmb);
             bmb.setButtonEnum(ButtonEnum.Ham);
-            constructor(bmb,img[0],"Añadir","Añada una nueva incidencia");
-            constructor(bmb,img[1],"Listar","Listar todas las incidencias");
-            constructor(bmb,img[2],"Eliminar","Elimina una incidencia");
+
+            constructor(bmb,img[0], getResources().getString(R.string.Añadir),getResources().getString(R.string.defAñadir));
+            constructor(bmb,img[1], getResources().getString(R.string.Listar),getResources().getString(R.string.defListar));
+            constructor(bmb,img[2],getResources().getString(R.string.Eliminar),getResources().getString(R.string.defEliminar));
 
             return menu;
         }

@@ -39,7 +39,7 @@ public class addincidencias extends Fragment {
 
         // Inflate the layout for this fragment
         final View addIncidencia = inflater.inflate(R.layout.addincidencies_layout, container, false);
-        final String[] emergencia = new String[] {"Alta","Mediana","Baja"};
+        final String[] emergencia = new String[] {getResources().getString(R.string.spinerpref1),getResources().getString(R.string.spinerpref2),getResources().getString(R.string.spinerpref3)};
         final Spinner spinner = addIncidencia.findViewById(R.id.spinner1);
         final ArrayAdapter adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, emergencia);
 
@@ -56,7 +56,7 @@ public class addincidencias extends Fragment {
 
                 incidencia incidencia = new incidencia(txtIncidenciaForm,emergencia);
                 DBDCreation.insertIncidencia(db,incidencia);
-                Toast toast = Toast.makeText(getActivity(),"Incidencia creada correctamente",Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getActivity(),getResources().getString(R.string.toast_correctadd),Toast.LENGTH_SHORT);
                 toast.show();
                 txtIncidencia.setText("");
 

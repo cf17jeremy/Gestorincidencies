@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Incident Manager</string>
+
+    <!-- LENGUAGE EN -->
+    <string name="dialog_Advetencia">Are you sure want eliminate all issue?</string>
+    <string name="dialog_aceptar">Accept</string>
+    <string name="dialog_cancelar">Decline</string>
+    <string name="dialog_respuesta">You selected decline.</string>
+    <string name="dialog_info">Information</string>
+    <string name="dialog_confirmacion">All issues have been removed successfully!</string>
+    <string name="dialog_textovacio">YOU CANNOT ADD AN ISSUE WITHOUT A TITLE!</string>
+    <string name="Añadir">Add</string>
+    <string name="Listar">List</string>
+    <string name="Eliminar">Delete</string>
+    <string name="defAñadir">Add new issue</string>
+    <string name="defListar">List all issue</string>
+    <string name="defEliminar">Delete all issue</string>
+    <string name="errorLogin">Worng user or password! </string>
+    <string name="spinerpref1">High</string>
+    <string name="spinerpref2">Medium</string>
+    <string name="spinerpref3">Low</string>
+    <string name="toast_correctadd">Issue successfully created</string>
+    <string name="remembertxt">Remember me</string>
+
+</resources>
