@@ -18,8 +18,8 @@
 ```
 ## Acceso
 ```
--Usuario: Admin
--Contraseña: 12345
+- Usuario: Admin
+- Contraseña: 12345
 ```
 ## Descargar APK
 [Descargar APK](https://github.com/cf17jeremy/Gestorincidencies/raw/main/gestorIn.apk)
