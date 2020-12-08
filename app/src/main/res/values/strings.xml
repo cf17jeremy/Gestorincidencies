@@ -12,14 +12,18 @@
     <string name="Añadir">Añadir</string>
     <string name="Listar">Listar</string>
     <string name="Eliminar">Eliminar</string>
+    <string name="Configuracion">Configuracion</string>
     <string name="defAñadir">Añada una nueva incidencia</string>
     <string name="defListar">Listar todas las incidencias</string>
     <string name="defEliminar">Elimina una incidencia</string>
+    <string name="defConfigurar">Configura tus preferencias en la aplicacion</string>
     <string name="errorLogin">Usuario o contraseña incorrecto!</string>
     <string name="spinerpref1">Alta</string>
     <string name="spinerpref2">Mediana</string>
     <string name="spinerpref3">Baja</string>
     <string name="toast_correctadd">Incidencia creada correctamente</string>
     <string name="remembertxt">Recuerdame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

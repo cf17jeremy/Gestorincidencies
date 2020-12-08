@@ -12,9 +12,11 @@
     <string name="Añadir">Add</string>
     <string name="Listar">List</string>
     <string name="Eliminar">Delete</string>
+    <string name="Configuracion">Configuration</string>
     <string name="defAñadir">Add new issue</string>
     <string name="defListar">List all issue</string>
     <string name="defEliminar">Delete all issue</string>
+    <string name="defConfigurar">Configure your preferences on app</string>
     <string name="errorLogin">Worng user or password! </string>
     <string name="spinerpref1">High</string>
     <string name="spinerpref2">Medium</string>
