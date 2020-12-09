@@ -31,5 +31,8 @@
     <string name="user">User</string>
     <string name="contra">Password</string>
     <string name="inciname">Issue name</string>
+    <string name="typeurg">Tipe of urgency</string>
+    <string name="toast_selecturg">You have to choose a level of urgency</string>
+    <string name="toast_voidurg">You have to give the issue a name</string>
 
 </resources>

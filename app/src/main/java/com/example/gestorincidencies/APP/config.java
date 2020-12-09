@@ -49,21 +49,21 @@ public class config extends Fragment {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
 
         // set title
-        alertDialogBuilder.setTitle(R.string.dialog_info);
+        alertDialogBuilder.setTitle(getString(R.string.dialog_info));
 
         // set dialog message
-        alertDialogBuilder.setMessage(R.string.dialog_Advetencia);
+        alertDialogBuilder.setMessage(getString(R.string.dialog_Advetencia));
         alertDialogBuilder.setCancelable(false);
-        alertDialogBuilder.setPositiveButton(R.string.dialog_aceptar, new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setPositiveButton(getString(R.string.dialog_aceptar), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 dbCreation.eliminar();
-                Toast toast = Toast.makeText((getActivity()).getApplicationContext(), R.string.dialog_confirmacion, Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText((getActivity()).getApplicationContext(), getString(R.string.dialog_confirmacion), Toast.LENGTH_SHORT);
                 toast.show();
             }
         });
-        alertDialogBuilder.setNegativeButton(R.string.dialog_cancelar, new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton(getString(R.string.dialog_cancelar), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                Toast toast = Toast.makeText((getActivity()).getApplicationContext(), R.string.dialog_respuesta, Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText((getActivity()).getApplicationContext(), getString(R.string.dialog_respuesta), Toast.LENGTH_SHORT);
                 toast.show();
                 dialog.cancel();
             }
@@ -78,20 +78,20 @@ public class config extends Fragment {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
 
         // set title
-        alertDialogBuilder.setTitle(R.string.dialog_info);
+        alertDialogBuilder.setTitle(getString(R.string.dialog_info));
 
         // set dialog message
         alertDialogBuilder
-                .setMessage(R.string.dialog_Advetencia2)
+                .setMessage(getString(R.string.dialog_Advetencia2))
                 .setCancelable(false)
-                .setPositiveButton(R.string.dialog_aceptar,new DialogInterface.OnClickListener() {
+                .setPositiveButton(getString(R.string.dialog_aceptar),new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,int id) {
                         dbCreation.eliminar();
                         savpref.reset();
                         System.exit(2);
                     }
                 })
-                .setNegativeButton(R.string.dialog_cancelar,new DialogInterface.OnClickListener() {
+                .setNegativeButton(getString(R.string.dialog_cancelar),new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,int id) {
                         Toast.makeText(getContext(), getString(R.string.dialog_respuesta),
                                 Toast.LENGTH_SHORT).show();

@@ -50,7 +50,7 @@ public class saveprefecence {
     }
     public void reset() {
         SharedPreferences login = context.getSharedPreferences("LoginDetails", Context.MODE_PRIVATE);
-        SharedPreferences lang = context.getSharedPreferences("LangDetails", Context.MODE_PRIVATE);
+        SharedPreferences lang = context.getSharedPreferences("IDetails", Context.MODE_PRIVATE);
         login.edit().clear().commit();
         lang.edit().clear().commit();
     }

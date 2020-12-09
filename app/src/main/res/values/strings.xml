@@ -31,5 +31,8 @@
     <string name="user">Usuario</string>
     <string name="contra">Contraseña</string>
     <string name="inciname">Nombre incidencia</string>
+    <string name="typeurg">Tipo de urgencia</string>
+    <string name="toast_selecturg">Tienes que elegir un nivel de urgencia</string>
+    <string name="toast_voidurg">Tienes que darle un nombre a la incidencia</string>
 
 </resources>
