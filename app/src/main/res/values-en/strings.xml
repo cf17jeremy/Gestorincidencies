@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">Incident Manager</string>
-
     <!-- LENGUAGE EN -->
+    <string name="app_name">Incident Manager</string>
     <string name="dialog_Advetencia">Are you sure want eliminate all issue?</string>
     <string name="dialog_Advetencia2">Are you sure want restore all values?</string>
     <string name="dialog_aceptar">Accept</string>

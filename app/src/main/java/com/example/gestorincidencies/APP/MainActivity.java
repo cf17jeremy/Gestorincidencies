@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //declaracion checkbox
         RememberMe = findViewById(R.id.rememberuser);
+        RememberMe.setText(getResources().getString(R.string.remembertxt));
 
         if (!new saveprefecence(this).isUserLogedOut()) {
             //si estan guardados entra directamente al menu
@@ -48,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         usuari = findViewById(R.id.user);
         contrasenya = findViewById(R.id.contrasenya);
         login = findViewById(R.id.btnlog);
+        usuari.setHint(getResources().getString(R.string.user));
+        contrasenya.setHint(getResources().getString(R.string.contra));
+        login.setText(getResources().getString(R.string.login));
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

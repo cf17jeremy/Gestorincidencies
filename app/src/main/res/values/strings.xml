@@ -1,7 +1,6 @@
 <resources>
-    <string name="app_name">Gestorincidencies</string>
-
     <!-- LENGUAGE ES -->
+    <string name="app_name">Gestorincidencies</string>
     <string name="dialog_Advetencia">Estás seguro de eliminar todas las incidencias?</string>
     <string name="dialog_Advetencia2">Estás seguro de restablecer los valores de fabrica?</string>
     <string name="dialog_aceptar">Aceptar</string>
@@ -27,7 +26,7 @@
     <string name="sel_id">Selecciona un idioma</string>
     <string name="español">Español</string>
     <string name="ingles">Inglés</string>
-    <string name="login">Loguearse</string>
+    <string name="login">Entra</string>
     <string name="user">Usuario</string>
     <string name="contra">Contraseña</string>
     <string name="inciname">Nombre incidencia</string>
