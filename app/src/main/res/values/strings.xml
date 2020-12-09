@@ -3,6 +3,7 @@
 
     <!-- LENGUAGE ES -->
     <string name="dialog_Advetencia">Estás seguro de eliminar todas las incidencias?</string>
+    <string name="dialog_Advetencia2">Estás seguro de restablecer los valores de fabrica?</string>
     <string name="dialog_aceptar">Aceptar</string>
     <string name="dialog_cancelar">Cancelar</string>
     <string name="dialog_respuesta">Has seleccionado cancelar.</string>
@@ -23,7 +24,12 @@
     <string name="spinerpref3">Baja</string>
     <string name="toast_correctadd">Incidencia creada correctamente</string>
     <string name="remembertxt">Recuerdame</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sel_id">Selecciona un idioma</string>
+    <string name="español">Español</string>
+    <string name="ingles">Inglés</string>
+    <string name="login">Loguearse</string>
+    <string name="user">Usuario</string>
+    <string name="contra">Contraseña</string>
+    <string name="inciname">Nombre incidencia</string>
 
 </resources>

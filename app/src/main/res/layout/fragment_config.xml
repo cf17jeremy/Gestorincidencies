@@ -7,14 +7,27 @@
     android:layout_marginTop="75dp"
     tools:context=".APP.config">
 
-    <com.fangxu.allangleexpandablebutton.AllAngleExpandableButton
-        android:id="@+id/button_expandable"
+    <Spinner
+        android:id="@+id/idioma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtincidencia" />
+
+    <com.fangxu.allangleexpandablebutton.AllAngleExpandableButton
+        android:id="@+id/button_expandable"
+        android:layout_width="316dp"
+        android:layout_height="424dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
         app:aebAnimDurationMillis="175"
+        app:aebBlurBackground="true"
+        app:aebBlurRadius="10"
         app:aebButtonElevation="4dp"
         app:aebButtonGapDp="25dp"
         app:aebEndAngleDegree="90"
@@ -30,7 +43,5 @@
         app:aebStartAngleDegree="90"
         app:aebSubButtonSizeDp="56dp"
         app:aebSubButtonTextColor="#ff0000ff"
-        app:aebSubButtonTextSizeSp="18dp"
-        app:aebBlurBackground="true"
-        app:aebBlurRadius="10"/>
+        app:aebSubButtonTextSizeSp="18dp" />
 </FrameLayout>

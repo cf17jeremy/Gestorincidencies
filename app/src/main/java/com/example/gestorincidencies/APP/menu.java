@@ -42,7 +42,7 @@ public class menu extends Fragment {
                 R.drawable.plus,
                 R.drawable.lista,
                 R.drawable.eliminar,
-                R.drawable.,
+                R.drawable.settings,
         };
 
         public void constructor (BoomMenuButton bmb, int foto, String text, String text2){
@@ -78,7 +78,7 @@ public class menu extends Fragment {
                             else if (index == 3) {
                                 FragmentManager menuManager = getFragmentManager();
                                 FragmentTransaction menuTransaction = menuManager.beginTransaction();
-                                Fragment fragmentList = new ListIncidencia();
+                                Fragment fragmentList = new config();
                                 menuTransaction.replace(R.id.fragmentID, fragmentList);
 
                                 menuTransaction.commit();
@@ -127,7 +127,7 @@ public class menu extends Fragment {
             constructor(bmb,img[0], getResources().getString(R.string.Añadir),getResources().getString(R.string.defAñadir));
             constructor(bmb,img[1], getResources().getString(R.string.Listar),getResources().getString(R.string.defListar));
             constructor(bmb,img[2],getResources().getString(R.string.Eliminar),getResources().getString(R.string.defEliminar));
-            constructor(bmb,img[2],getResources().getString(R.string.Configuracion),getResources().getString(R.string.defConfigurar));
+            constructor(bmb,img[3],getResources().getString(R.string.Configuracion),getResources().getString(R.string.defConfigurar));
             return menu;
         }
 }
